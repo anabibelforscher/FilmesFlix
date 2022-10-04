@@ -1,4 +1,4 @@
-package com.br.natanfc.filmesflix
+package com.br.anabibelforscher.filmesflix
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.br.natanfc.filmesflix
+package com.br.anabibelforscher.filmesflix
 
 import org.junit.Test
 

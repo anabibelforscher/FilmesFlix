@@ -1,4 +1,4 @@
-package com.br.natanfc.filmesflix
+package com.br.anabibelforscher.filmesflix.view
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
