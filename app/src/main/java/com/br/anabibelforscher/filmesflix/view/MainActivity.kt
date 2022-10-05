@@ -2,6 +2,7 @@ package com.br.anabibelforscher.filmesflix.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.br.anabibelforscher.filmesflix.R
@@ -22,10 +23,13 @@ class MainActivity : AppCompatActivity() {
         movieListViewModel.init()
 
         initObserver()
+        loadVisibility(true)
     }
 
     private fun initObserver(){
         movieListViewModel.moviesList.observe(this) { list ->
+            if (list.isNotEmpty())
+                loadVisibility(false)
             populateList(list)
         }
     }
@@ -35,5 +39,9 @@ class MainActivity : AppCompatActivity() {
             hasFixedSize()
             adapter = MoviesAdapter(list)
         }
+    }
+
+    private fun loadVisibility(isLoading : Boolean){
+        progressBar.visibility = if (isLoading) View.VISIBLE else View.GONE
     }
 }
