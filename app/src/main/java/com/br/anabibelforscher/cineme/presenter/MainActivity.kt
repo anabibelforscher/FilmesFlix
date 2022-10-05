@@ -1,13 +1,12 @@
-package com.br.anabibelforscher.filmesflix.view
+package com.br.anabibelforscher.cineme.presenter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.br.anabibelforscher.filmesflix.R
-import com.br.anabibelforscher.filmesflix.model.Movie
-import com.br.anabibelforscher.filmesflix.viewmodel.MovieListViewModel
+import com.br.anabibelforscher.cineme.R
+import com.br.anabibelforscher.cineme.domain.Movie
+import com.br.anabibelforscher.cineme.framework.viewmodel.MovieListViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

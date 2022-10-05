@@ -1,4 +1,4 @@
-package com.br.anabibelforscher.filmesflix
+package com.br.anabibelforscher.cineme
 
 import org.junit.Test
 

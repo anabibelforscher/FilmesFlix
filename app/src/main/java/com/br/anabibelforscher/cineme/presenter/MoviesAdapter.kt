@@ -1,11 +1,11 @@
-package com.br.anabibelforscher.filmesflix.view
+package com.br.anabibelforscher.cineme.presenter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
-import com.br.anabibelforscher.filmesflix.R
-import com.br.anabibelforscher.filmesflix.model.Movie
+import com.br.anabibelforscher.cineme.R
+import com.br.anabibelforscher.cineme.domain.Movie
 import kotlinx.android.synthetic.main.movie_item_layout.view.*
 
 class MoviesAdapter(private val movieList: List<Movie>): RecyclerView.Adapter<MoviesViewHolder>() {

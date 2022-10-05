@@ -1,6 +1,6 @@
-package com.br.anabibelforscher.filmesflix.api
+package com.br.anabibelforscher.cineme.framework.api
 
-import com.br.anabibelforscher.filmesflix.model.Movie
+import com.br.anabibelforscher.cineme.domain.Movie
 import retrofit2.Call
 import retrofit2.http.GET
 

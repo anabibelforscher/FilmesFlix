@@ -1,4 +1,4 @@
-package com.br.anabibelforscher.filmesflix
+package com.br.anabibelforscher.cineme
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.br.natanfc.filmesflix", appContext.packageName)
+        assertEquals("com.br.anabibelforcher.filmesflix", appContext.packageName)
     }
 }

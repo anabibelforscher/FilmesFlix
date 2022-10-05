@@ -1,4 +1,4 @@
-package com.br.anabibelforscher.filmesflix.api
+package com.br.anabibelforscher.cineme.framework.api
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

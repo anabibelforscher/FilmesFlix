@@ -1,4 +1,4 @@
-package com.br.anabibelforscher.filmesflix.model
+package com.br.anabibelforscher.cineme.domain
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

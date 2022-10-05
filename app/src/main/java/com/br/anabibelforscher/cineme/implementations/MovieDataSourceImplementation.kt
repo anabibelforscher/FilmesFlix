@@ -1,18 +1,19 @@
-package com.br.anabibelforscher.filmesflix.repository
+package com.br.anabibelforscher.cineme.implementations
 
 import android.util.Log
-import com.br.anabibelforscher.filmesflix.api.MovieRestApiTask
-import com.br.anabibelforscher.filmesflix.model.Movie
+import com.br.anabibelforscher.cineme.framework.api.MovieRestApiTask
+import com.br.anabibelforscher.cineme.data.MovieDataSource
+import com.br.anabibelforscher.cineme.domain.Movie
 
-class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
-
+class MovieDataSourceImplementation(private val movieRestApiTask: MovieRestApiTask) :
+    MovieDataSource {
     companion object {
         const val TAG = "MovieRepository"
     }
 
     private val movieList = arrayListOf<Movie>()
 
-    fun getAllMovies(): List<Movie> {
+    override fun getAllMovies(): List<Movie> {
         val request = movieRestApiTask.retrofitApi().getAllMovies().execute()
 
         if (request.isSuccessful) {
@@ -26,5 +27,4 @@ class MovieRepository(private val movieRestApiTask: MovieRestApiTask) {
         }
         return movieList
     }
-
 }

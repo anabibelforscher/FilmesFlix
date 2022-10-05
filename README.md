@@ -1,4 +1,4 @@
-# **FilmesFlix**
+# **CineME**
 
 Projeto criado para fins de estudo no módulo de MVVM e Clean Architecture da DIO.
 

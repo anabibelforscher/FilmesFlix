@@ -1,4 +1,4 @@
-package com.br.anabibelforscher.filmesflix.view
+package com.br.anabibelforscher.cineme.presenter
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
